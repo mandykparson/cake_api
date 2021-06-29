@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  # get "/cakes", to: "cakes#index"
+  # get "/cakes/:id", to: "cakes#show"
+  # post "/cakes", to: "cakes#create"
+  resources :cakes, only: [:index, :show, :create, :update, :destroy]
 end
