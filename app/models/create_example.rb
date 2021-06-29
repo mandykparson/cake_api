@@ -1,0 +1,2 @@
+class CreateExample < ApplicationRecord
+end
